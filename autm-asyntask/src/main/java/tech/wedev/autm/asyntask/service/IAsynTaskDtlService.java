@@ -1,7 +1,6 @@
 package tech.wedev.autm.asyntask.service;
 
 import tech.wedev.autm.asyntask.AsynTaskBean;
-import tech.wedev.autm.asyntask.entity.AsynTaskConf;
 
 import java.util.List;
 
@@ -9,12 +8,6 @@ import java.util.List;
  * 表cosp_asyn_task_dtl的增删改查
  */
 public interface IAsynTaskDtlService {
-    /**
-     * 获取所有的任务定义
-     *
-     * @return 任务定义
-     */
-    public List<AsynTaskConf> queryAll();
 
     /**
      * 新增异步任务记录

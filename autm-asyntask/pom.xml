@@ -10,7 +10,7 @@
     </parent>
     <groupId>tech.wedev.autm</groupId>
     <artifactId>autm-asyntask</artifactId>
-    <version>1.0.6.RELEASE</version>
+    <version>1.0.7.RELEASE</version>
     <packaging>jar</packaging>
     <name>autm-asyntask</name>
     <url>http://maven.apache.org</url>
@@ -49,6 +49,13 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub CATBOSHI Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/catboshi/asynDemo</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>

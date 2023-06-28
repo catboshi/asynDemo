@@ -54,7 +54,7 @@ public class AsynTaskModule {
 
         //获取子任务配置
         subTaskDefs = getTaskConfList();
-        logger.debug("======sub task load successful======");
+        logger.debug("======sub task load successfully======");
         logger.debug(subTaskDefs.toString());
 
         //获取数据库中的任务配置列表
@@ -96,7 +96,7 @@ public class AsynTaskModule {
             threadPool.setAsynTaskInfo(taskDef);
             threadPool.initialize();
 
-            logger.debug("task [" + taskType + "] threadpool initialize successful");
+            logger.debug("task [" + taskType + "] threadpool initialize successfully");
 
             //添加到任务处理线程池Map
             taskPools.put(taskType, threadPool);
@@ -109,7 +109,7 @@ public class AsynTaskModule {
             taskGetTaskThread.setAsynTaskServer(threadPool);
             taskGetTaskThread.initialize();
 
-            logger.debug("task [" + taskType + "] task get thread initialize successful");
+            logger.debug("task [" + taskType + "] task get thread initialize successfully");
 
             //添加获取任务线程到Map
             getTaskThreads.put(taskType, taskGetTaskThread);
@@ -123,7 +123,7 @@ public class AsynTaskModule {
                 timeoutTaskGetThread.setAsynTaskServer(threadPool);
                 timeoutTaskGetThread.initialize();
 
-                logger.debug("task [" + taskType + "] timeout task get thread initialize successful");
+                logger.debug("task [" + taskType + "] timeout task get thread initialize successfully");
 
                 //添加任务超时监控线程到Map
                 getTimeoutTaskThreads.put(taskType, timeoutTaskGetThread);
@@ -134,7 +134,7 @@ public class AsynTaskModule {
 
         //重置状态
         inited = true;
-        logger.info("asyn task initialize successful");
+        logger.info("asyn task initialize successfully");
 
     }
 
@@ -177,7 +177,7 @@ public class AsynTaskModule {
         getTimeoutTaskThreads = null;
 
         inited = false;
-        logger.info("asyn task terminate successful");
+        logger.info("asyn task terminate successfully");
     }
 
     /**

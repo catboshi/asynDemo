@@ -38,7 +38,7 @@ public class AsynTaskGetTaskThread extends AbstractAsynTask implements Runnable 
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("ip", SystemUtil.getContainerIdOrHostIp());
         map.put("getTaskNum", asynTaskInfo.getGetTaskNum());
-        map.put("tasktype", asynTaskInfo.getGetTaskType());
+        map.put("taskType", asynTaskInfo.getGetTaskType());
         int updTaskCount;
         int continuousBusyCount = 0;//持续忙碌时间
         int usabilityCount = 0;

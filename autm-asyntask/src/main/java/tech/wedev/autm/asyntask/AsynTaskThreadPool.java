@@ -146,7 +146,7 @@ public class AsynTaskThreadPool {
 
     /**
      * 添加发报队列
-     * @param dat
+     * @param worker
      */
     public void execute(AsynTaskWorker worker) {
         synchronized (asynTaskMap) {

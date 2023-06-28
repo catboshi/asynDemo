@@ -210,6 +210,7 @@ public class AsynTaskModule {
 
             //额外的固定信息：线程名，mybatis参数等
             String taskType = taskDef.getTaskType();
+            taskInfo.setGetTaskType(taskType);
             taskInfo.setGetTaskThreadName(taskType + "_GetTaskThread");
             taskInfo.setServerName(taskType + "_Server");
             taskInfo.setGetTimeoutTaskThreadName(taskType + "_GetTimeoutTaskThread");

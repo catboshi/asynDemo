@@ -1,8 +1,18 @@
 @@ -0,0 +1,29 @@
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.idea
+*.iws
+*.iml
+*.ipr
 
 ### Eclipse ###
 .apt_generated
@@ -28,4 +38,3 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-/target
